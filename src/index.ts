@@ -15,12 +15,10 @@ import {
   validate,
 } from "./common/utils";
 import { getRateLimit } from "./requests/getRateLimit";
-import { sendActionRun } from "./analytics";
 
 async function main() {
   setTimezone();
   const errors = validate();
-  sendActionRun();
 
   if (Object.entries(errors).length > 0) {
     core.setFailed(

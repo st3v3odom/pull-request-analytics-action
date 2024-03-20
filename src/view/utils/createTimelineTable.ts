@@ -39,7 +39,7 @@ export const createTimelineTable = (
       type === "percentile" ? parseInt(getValueAsIs("PERCENTILE")) : ""
     }${type === "percentile" ? "th" : ""} ${type}) ${date}`,
     description:
-      "**Time to review** - time from PR creation to first review. \n**Time to approve** - time from PR creation to first approval without requested changes. \n**Time to merge** - time from PR creation to merge.",
+      "**Time to review** - time from PR creation to first review. \n**Time to Review Request** - time it takes to review other PRs\n** Time to approve** - time from PR creation to first approval without requested changes. \n**Time to merge** - time from PR creation to merge.",
     table: {
       headers: [
         "user",
